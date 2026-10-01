@@ -17,7 +17,7 @@ export default function ProductCard({name, price, category, onAdd}: ProductCardP
       <Text>Category: {category}</Text>
 
       <Button
-        title="Pridėti į krepšelį"
+        title="Add to cart"
         onPress={onAdd}
       />
     </View>
@@ -27,9 +27,12 @@ export default function ProductCard({name, price, category, onAdd}: ProductCardP
 const styles = StyleSheet.create({
   card: {
     padding: 15,
+    width: 180,
+    height: 150,
     marginVertical: 8,
     borderWidth: 1,
     borderRadius: 10,
+    gap: 5,
   },
 
   name: {
